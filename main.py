@@ -3,6 +3,9 @@ from logging import DEBUG
 
 
 #prints however many lines user wants
+#purpose: print lines by length, which character line is made of, how many characters in each line
+#name: lines
+#parameter: none
 def lines():
         blank = ''
         count = 0
@@ -13,6 +16,9 @@ def lines():
                 print(characters * num_chars)
                 count += 1
 #prints a design of a circle
+#purpose: print a circle
+#name: circle
+#parameters: none
 def circle():
         print('Below is a print of the circle:')
         print(
@@ -24,20 +30,15 @@ def circle():
               '  \             / \n'
               '    \          / \n'
               '     ---___---\n')
+def custom_designs():
+    one = (f'{"^":>3}{"^":>3}\n {"-":^7}\n{"":-<8}')
 
-one = ('  0    0\n'
-     '     -   \n'
-     '\________/\n')
+    two= (f'{"^":>3}{"0":>3}\n {"-":^7}\n{"":-<8}')
 
-two = ('  ^   0\n'
-     '    -   \n'
-     '_________\n'
-     '          ')
-bear = ''
 
 #Chooses between 3 designs of my choice
 #Art from website https://www.asciiart.eu/animals/bears
-def custom_designs():
+
     def bear():
         print(' __         __')
         print('/  \.-"""-./  \ ')
