@@ -38,7 +38,7 @@ def custom_designs():
 
 #Chooses between 3 designs of my choice
 #Art from website https://www.asciiart.eu/animals/bears
-
+#
     def bear():
         print(' __         __')
         print('/  \.-"""-./  \ ')
