@@ -1,4 +1,11 @@
-# Code goes here and DO NOT FORGET INTRO COMMENTS
+# Programmers:Max Rice
+# Course:  CS151, Professor Zee
+# Due Date: 11/7/2024
+# PA Assignment: 3
+# Problem Statement: Print three ASCII art pieces
+# Data In: how many lines, How many characters do you want per line, what character would you want in the line, would you like to print a circle, would you like to print a wink, smile, or bear
+# Data Out: lines print, circle, bear, wink, smile
+# Credits: this code is basen on the guidelines given in the read me file
 from logging import DEBUG
 
 
@@ -13,7 +20,7 @@ def lines():
             num_lines = input('How many lines do you want?: ')
             while not num_lines.isdigit():
                 num_lines = input('ERROR: How many lines do you want?: ')
-            num_chars = int(input('How many characters do you want?: '))
+            num_chars = int(input('How many characters do you want per line?: '))
             characters = input('what characters do you want?: ')
             num_lines = int(num_lines)
             while count < num_lines:
@@ -24,7 +31,7 @@ def lines():
     #name: circle
     #parameters: none
 def circle():
-            play = input('Would you like to play a circle? (y/n): ')
+            play = input('Would you like to play a circle? (yes/no): ')
             if play == 'yes':
                 print('Below is a print of the circle:')
 
