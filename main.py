@@ -9,7 +9,9 @@ from logging import DEBUG
 def lines():
         blank = ''
         count = 0
-        num_lines = int(input('How many lines do you want?: '))
+        num_lines = (input('How many lines do you want?: '))
+        while not num_lines.isdigit:
+            num_lines = (input('How many lines do you want?: '))
         num_chars = int(input('How many characters do you want?: '))
         characters = input('what characters do you want?: ')
         while count < num_lines:
